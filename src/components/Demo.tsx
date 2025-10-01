@@ -152,7 +152,7 @@ export default function Demo() {
             ref={subtitleRef}
             className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed"
           >
-            See how Shop Agent&apos;s AI naturally converses with customers and
+            See how Mudda&apos;s AI naturally converses with customers and
             provides product recommendations in real-time.
           </p>
         </div>
@@ -167,7 +167,7 @@ export default function Demo() {
                   <MessageCircle className="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg">Shop Agent</h3>
+                  <h3 className="font-bold text-lg">Mudda</h3>
                   <p className="text-sm text-primary-100">
                     AI Assistant • Online
                   </p>
@@ -289,17 +289,17 @@ export default function Demo() {
                 Get Started Today
               </h4>
               <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                Install Shop Agent for free and revolutionize your customer
+                Install Mudda for free and revolutionize your customer
                 experience with AI-powered support.
               </p>
               <a
-                href="https://43.203.220.15/download/shop-agent"
+                href="https://43.203.220.15/download/mudda"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-3 text-primary-700 dark:text-primary-300 hover:text-primary-800 dark:hover:text-primary-200 font-semibold group"
               >
                 <Download className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                <span>Download Shop Agent</span>
+                <span>Download Mudda</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </div>

@@ -100,7 +100,7 @@ export default function Hero() {
             ref={subtitleRef}
             className="text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
-            Install Shop Agent like Chatwoot and let AI handle everything from
+            Install Mudda like Chatwoot and let AI handle everything from
             product recommendations to order inquiries automatically.
           </p>
 
@@ -110,7 +110,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
           >
             <a
-              href="https://43.203.220.15/download/shop-agent"
+              href="https://43.203.220.15/download/mudda"
               target="_blank"
               rel="noopener noreferrer"
               className="group px-10 py-5 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-2xl font-semibold text-xl hover:from-primary-700 hover:to-primary-800 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center space-x-3"

@@ -64,9 +64,11 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div ref={logoRef} className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center shadow-lg">
-              <MessageCircle className="w-5 h-5 text-white" />
-            </div>
+            <img
+              src="/mudda-logo.png"
+              alt="Mudda Logo"
+              className="w-8 h-8 rounded-lg shadow-lg"
+            />
             <span
               className={`text-xl font-bold ${
                 isScrolled
@@ -74,7 +76,7 @@ export default function Header() {
                   : "text-gray-900 dark:text-white"
               }`}
             >
-              Shop Agent
+              Mudda
             </span>
           </div>
 
@@ -111,7 +113,7 @@ export default function Header() {
               Docs
             </a> */}
             <a
-              href="https://43.203.220.15/download/shop-agent"
+              href="https://43.203.220.15/download/mudda"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2"
@@ -178,7 +180,7 @@ export default function Header() {
                 Docs
               </a> */}
               <a
-                href="https://43.203.220.15/download/shop-agent"
+                href="https://43.203.220.15/download/mudda"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block px-3 py-2 bg-primary-600 text-white rounded-lg hover:bg-primary-700 transition-colors flex items-center space-x-2"

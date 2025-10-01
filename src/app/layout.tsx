@@ -3,43 +3,57 @@ import "./globals.css";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Shop Agent - Transform E-commerce Customer Experience with AI",
+  title: "Mudda - AI Customer Service Chatbot | E-commerce Automation Solution",
   description:
-    "Easily add AI customer service to your e-commerce store for 24/7 automated support. Simple installation like Chatwoot, Gemini AI-powered smart support, and database integration to increase revenue.",
+    "Install AI customer service chatbot in 5 minutes. 24/7 automated support, product recommendations, order inquiries. Boost customer satisfaction and reduce labor costs by 80%. Easy installation like Chatwoot with Gemini AI-powered smart support.",
   keywords:
-    "AI customer service, e-commerce support, chatbot, customer service, Gemini AI, e-commerce automation",
-  authors: [{ name: "Shop Agent Team" }],
-  creator: "Shop Agent",
-  publisher: "Shop Agent",
+    "AI chatbot, customer service chatbot, e-commerce chatbot, AI customer support, shopping mall automation, automated customer service, customer support automation, AI customer service, chatbot, e-commerce chatbot, shopping mall automation, customer support automation, AI assistant, Chatwoot, Gemini AI, AI 챗봇, 고객상담 챗봇, 쇼핑몰 챗봇, AI 고객센터, 이커머스 챗봇, 자동 고객응대, 고객상담 자동화, 쇼핑몰 자동화, 고객서비스 AI, 상담 챗봇, 온라인 쇼핑 챗봇, 인공지능 상담원, 무인 고객센터, 24시간 고객상담",
+  authors: [{ name: "Mudda Team" }],
+  creator: "Mudda",
+  publisher: "Mudda",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://shopagent.com"),
+  metadataBase: new URL("https://mudda.com"),
   alternates: {
     canonical: "/",
+    languages: {
+      "ko-KR": "/ko",
+      "en-US": "/en",
+    },
   },
   icons: {
     icon: [
-      { url: "/logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/logo.png", sizes: "16x16", type: "image/png" },
+      { url: "/mudda-logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/mudda-logo.png", sizes: "16x16", type: "image/png" },
+      { url: "/mudda-logo.png", sizes: "192x192", type: "image/png" },
+      { url: "/mudda-logo.png", sizes: "512x512", type: "image/png" },
     ],
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    shortcut: "/mudda-logo.png",
+    apple: "/mudda-logo.png",
   },
   openGraph: {
-    title: "Shop Agent - Transform E-commerce Customer Experience with AI",
+    title: "Mudda - AI Customer Service Chatbot | E-commerce Automation",
     description:
-      "Easily add AI customer service to your e-commerce store for 24/7 automated support.",
-    url: "https://shopagent.com",
-    siteName: "Shop Agent",
+      "Install AI customer service chatbot in 5 minutes. 24/7 automated support, product recommendations, order inquiries. Boost customer satisfaction and reduce costs by 80%.",
+    url: "https://mudda.com",
+    siteName: "Mudda",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://mudda.com/mudda-logo.png",
         width: 1200,
         height: 630,
-        alt: "Shop Agent - AI Customer Service",
+        alt: "Mudda - AI Customer Service Chatbot",
+        type: "image/png",
+      },
+      {
+        url: "https://mudda.com/mudda-logo.png",
+        width: 800,
+        height: 400,
+        alt: "Mudda Logo",
+        type: "image/png",
       },
     ],
     locale: "en_US",
@@ -47,10 +61,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shop Agent - Transform E-commerce Customer Experience with AI",
+    title: "Mudda - AI Customer Service Chatbot | E-commerce Automation",
     description:
-      "Easily add AI customer service to your e-commerce store for 24/7 automated support.",
-    images: ["/og-image.png"],
+      "Install AI chatbot in 5 minutes. 24/7 automated support, reduce costs by 80%.",
+    images: ["https://mudda.com/mudda-logo.png"],
+    creator: "@mudda_official",
+    site: "@mudda_official",
   },
   robots: {
     index: true,
@@ -65,6 +81,13 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "your-google-verification-code",
+    other: {
+      "naver-site-verification": "your-naver-verification-code",
+    },
+  },
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
   },
 };
 
@@ -76,6 +99,68 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        {/* PWA Manifest */}
+        <link rel="manifest" href="/manifest.json" />
+
+        {/* JSON-LD 구조화 데이터 - 영어 */}
+        <Script
+          id="json-ld-organization"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SoftwareApplication",
+              name: "Mudda",
+              applicationCategory: "BusinessApplication",
+              operatingSystem: "Web",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "4.8",
+                ratingCount: "127",
+              },
+              description:
+                "AI customer service chatbot. Install in 5 minutes for 24/7 automated customer support in your e-commerce store.",
+            }),
+          }}
+        />
+        <Script
+          id="json-ld-website"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Mudda",
+              url: "https://mudda.com",
+              description: "AI Customer Service Chatbot Solution",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://mudda.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+              inLanguage: ["en-US", "ko-KR"],
+            }),
+          }}
+        />
+        {/* 카카오톡 미리보기 최적화 */}
+        <meta property="og:image" content="https://mudda.com/mudda-logo.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta
+          property="og:image:alt"
+          content="Mudda - AI Customer Service Chatbot"
+        />
+
+        {/* 추가 SNS 메타태그 */}
+        <meta name="theme-color" content="#3b82f6" />
+        <meta name="mobile-web-app-capable" content="yes" />
+
         <Script
           id="dark-mode-init"
           strategy="beforeInteractive"

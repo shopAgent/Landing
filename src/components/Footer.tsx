@@ -102,11 +102,13 @@ export default function Footer() {
           {/* Logo and Description */}
           <div ref={logoRef} className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center shadow-lg">
-                <MessageCircle className="w-6 h-6 text-white" />
-              </div>
+              <img
+                src="/mudda-logo.png"
+                alt="Mudda Logo"
+                className="w-10 h-10 rounded-xl shadow-lg"
+              />
               <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                Shop Agent
+                Mudda
               </span>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed text-lg">
@@ -130,7 +132,7 @@ export default function Footer() {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@shopagent.com"
+                href="mailto:contact@mudda.com"
                 className="w-10 h-10 bg-gray-200 dark:bg-gray-800 hover:bg-primary-600 hover:text-white dark:hover:bg-primary-600 rounded-xl flex items-center justify-center transition-all duration-200 hover:scale-110 text-gray-600 dark:text-white"
                 aria-label="Email"
               >
@@ -163,7 +165,7 @@ export default function Footer() {
               </li> */}
               <li>
                 <a
-                  href="https://43.203.220.15/download/shop-agent"
+                  href="https://43.203.220.15/download/mudda"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-white transition-colors font-medium hover:translate-x-1 inline-block"
@@ -214,7 +216,7 @@ export default function Footer() {
               </li> */}
               <li>
                 <a
-                  href="mailto:contact@shopagent.com"
+                  href="mailto:contact@mudda.com"
                   className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-white transition-colors font-medium hover:translate-x-1 inline-block"
                 >
                   Contact
@@ -259,7 +261,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-gray-200 dark:border-gray-700 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 dark:text-gray-400 text-sm mb-6 md:mb-0 flex items-center space-x-2">
-            <span>© 2025 Shop Agent. Made with</span>
+            <span>© 2025 Mudda. Made with</span>
             <Heart className="w-4 h-4 text-red-500" />
             <span>for e-commerce.</span>
           </div>

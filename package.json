@@ -1,7 +1,7 @@
 {
-  "name": "shop-agent-landing",
+  "name": "mudda-landing",
   "version": "1.0.0",
-  "description": "Shop Agent - Transform E-commerce Customer Experience with AI",
+  "description": "Mudda - Transform E-commerce Customer Experience with AI",
   "keywords": [
     "ai",
     "chatbot",
@@ -12,15 +12,15 @@
     "gsap",
     "tailwindcss"
   ],
-  "author": "Shop Agent Team",
+  "author": "Mudda Team",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shopagent/landing-page.git"
+    "url": "https://github.com/mudda/landing-page.git"
   },
-  "homepage": "https://shopagent.com",
+  "homepage": "https://mudda.com",
   "bugs": {
-    "url": "https://github.com/shopagent/landing-page/issues"
+    "url": "https://github.com/mudda/landing-page/issues"
   },
   "scripts": {
     "dev": "next dev",

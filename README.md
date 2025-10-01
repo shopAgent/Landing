@@ -1,10 +1,10 @@
-# Shop Agent Landing Page
+# Mudda Landing Page
 
-Shop Agent의 공식 랜딩 페이지입니다. GSAP 애니메이션과 Next.js 14, Tailwind CSS를 활용하여 제작되었습니다.
+Mudda의 공식 랜딩 페이지입니다. GSAP 애니메이션과 Next.js 14, Tailwind CSS를 활용하여 제작되었습니다.
 
 ## 🚀 프로젝트 개요
 
-Shop Agent는 쇼핑몰에 AI 상담원을 쉽게 추가할 수 있는 SDK입니다. 이 랜딩 페이지는 Shop Agent의 기능과 가치를 효과적으로 전달하기 위해 제작되었습니다.
+Mudda는 쇼핑몰에 AI 상담원을 쉽게 추가할 수 있는 SDK입니다. 이 랜딩 페이지는 Mudda의 기능과 가치를 효과적으로 전달하기 위해 제작되었습니다.
 
 ### 주요 특징
 
@@ -203,10 +203,10 @@ MIT License - 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
 
 ## 📞 문의
 
-- **이메일**: contact@shopagent.com
-- **GitHub**: [Shop Agent Repository](https://github.com/shopagent)
-- **문서**: [Shop Agent Docs](https://docs.shopagent.com)
+- **이메일**: contact@mudda.com
+- **GitHub**: [Mudda Repository](https://github.com/mudda)
+- **문서**: [Mudda Docs](https://docs.mudda.com)
 
 ---
 
-© 2025 Shop Agent. All rights reserved.
+© 2025 Mudda. All rights reserved.
