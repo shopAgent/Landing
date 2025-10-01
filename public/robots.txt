@@ -1,5 +1,5 @@
 # Mudda - AI 고객상담 챗봇
-# https://mudda.com
+# https://www.mudda.co.kr
 
 User-agent: *
 Allow: /
@@ -8,7 +8,7 @@ Disallow: /_next/
 Disallow: /admin/
 
 # Sitemap
-Sitemap: https://mudda.com/sitemap.xml
+Sitemap: https://www.mudda.co.kr/sitemap.xml
 
 # 크롤링 속도 조절
 Crawl-delay: 1
@@ -31,4 +31,5 @@ Allow: /
 
 User-agent: Daumoa
 Allow: /
+
 

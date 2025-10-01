@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://mudda.com"),
+  metadataBase: new URL("https://www.mudda.co.kr"),
   alternates: {
     canonical: "/",
     languages: {
@@ -26,30 +26,34 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/mudda-logo.png", sizes: "32x32", type: "image/png" },
-      { url: "/mudda-logo.png", sizes: "16x16", type: "image/png" },
-      { url: "/mudda-logo.png", sizes: "192x192", type: "image/png" },
-      { url: "/mudda-logo.png", sizes: "512x512", type: "image/png" },
+      { url: "/mudda-logo.png", sizes: "any", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
     ],
-    shortcut: "/mudda-logo.png",
-    apple: "/mudda-logo.png",
+    shortcut: ["/favicon.ico"],
+    apple: [{ url: "/mudda-logo.png", sizes: "180x180", type: "image/png" }],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/mudda-logo.png",
+      },
+    ],
   },
   openGraph: {
     title: "Mudda - AI Customer Service Chatbot | E-commerce Automation",
     description:
       "Install AI customer service chatbot in 5 minutes. 24/7 automated support, product recommendations, order inquiries. Boost customer satisfaction and reduce costs by 80%.",
-    url: "https://mudda.com",
+    url: "https://www.mudda.co.kr",
     siteName: "Mudda",
     images: [
       {
-        url: "https://mudda.com/mudda-logo.png",
+        url: "https://www.mudda.co.kr/mudda-logo.png",
         width: 1200,
         height: 630,
         alt: "Mudda - AI Customer Service Chatbot",
         type: "image/png",
       },
       {
-        url: "https://mudda.com/mudda-logo.png",
+        url: "https://www.mudda.co.kr/mudda-logo.png",
         width: 800,
         height: 400,
         alt: "Mudda Logo",
@@ -64,7 +68,7 @@ export const metadata: Metadata = {
     title: "Mudda - AI Customer Service Chatbot | E-commerce Automation",
     description:
       "Install AI chatbot in 5 minutes. 24/7 automated support, reduce costs by 80%.",
-    images: ["https://mudda.com/mudda-logo.png"],
+    images: ["https://www.mudda.co.kr/mudda-logo.png"],
     creator: "@mudda_official",
     site: "@mudda_official",
   },
@@ -136,19 +140,33 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Mudda",
-              url: "https://mudda.com",
+              url: "https://www.mudda.co.kr",
               description: "AI Customer Service Chatbot Solution",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://mudda.com/search?q={search_term_string}",
+                target: "https://www.mudda.co.kr/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
               inLanguage: ["en-US", "ko-KR"],
             }),
           }}
         />
-        {/* 카카오톡 미리보기 최적화 */}
-        <meta property="og:image" content="https://mudda.com/mudda-logo.png" />
+        {/* 카카오톡 미리보기 최적화 - 기존 mudda 방식 적용 */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Mudda" />
+        <meta
+          property="og:title"
+          content="Mudda - AI Customer Service Chatbot"
+        />
+        <meta
+          property="og:description"
+          content="Install AI customer service chatbot in 5 minutes. 24/7 automated support, reduce costs by 80%."
+        />
+        <meta property="og:url" content="https://www.mudda.co.kr/" />
+        <meta
+          property="og:image"
+          content="https://www.mudda.co.kr/mudda-logo.png"
+        />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:type" content="image/png" />
@@ -160,6 +178,23 @@ export default function RootLayout({
         {/* 추가 SNS 메타태그 */}
         <meta name="theme-color" content="#3b82f6" />
         <meta name="mobile-web-app-capable" content="yes" />
+
+        {/* 트위터 카드도 직접 추가 */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Mudda - AI Customer Service Chatbot"
+        />
+        <meta
+          name="twitter:description"
+          content="Install AI chatbot in 5 minutes. 24/7 automated support, reduce costs by 80%."
+        />
+        <meta
+          name="twitter:image"
+          content="https://www.mudda.co.kr/mudda-logo.png"
+        />
+        <meta name="twitter:site" content="@mudda_official" />
+        <meta name="twitter:creator" content="@mudda_official" />
 
         <Script
           id="dark-mode-init"
